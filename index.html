@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Gastos</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Meu Controle de Gastos</h1>
+
+        <section class="saldo">
+            <p>Saldo Disponível</p>
+            <h2 id="saldo">R$ 500,00</h2>
+        </section>
+
+       <section class="formulario">
+            <input type="text" id="descricao" placeholder="Descrição do gasto">
+
+            <input type="text" id="valor" placeholder="Valor" min="0" inputmode="decimal">
+
+          <button onclick="adicionarGasto()">
+            Adicionar gasto
+          </button>
+       </section>
+
+       <h3>Meus gastos</h3>
+       <div id="listaGastos"></div>
+       
+       <section class="total">
+        <p>Total gasto</p>
+        <h2>R$ 0,00</h2>
+       </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
