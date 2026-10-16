@@ -192,3 +192,49 @@ h3 {
         font-size: 2.2rem;
     }
 }
+
+/* Botão para Excluir Gastos */
+ .gasto button {
+    background: #c2413b;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.gasto button:hover {
+    background: #992f2a;
+}
+
+/* NOVO: HISTÓRICO DE MOVIMENTAÇÕES */
+#historico {
+    background: var(--card);
+    border-radius: var(--raio);
+    padding: 4px 20px;
+}
+
+.movimento {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--linha);
+}
+
+.movimento:last-child {
+    border-bottom: none;
+}
+
+/* Entradas */
+.movimento.entrada span:last-child {
+    color: #16803c;
+    font-weight: 700;
+}
+
+/* Despesas */
+.movimento.despesa span:last-child {
+    color: var(--vermelho);
+    font-weight: 700;
+}
